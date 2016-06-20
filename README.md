@@ -27,3 +27,5 @@ After that, terminate it and run:
 ```
 
 A file named node-flame.svg will be available in the directoty. Open it with a web browser.
+
+You can find an example [here](./node-flame-sample.svg).
