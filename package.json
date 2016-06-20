@@ -1,0 +1,29 @@
+{
+  "name": "bcrypt-sample",
+  "version": "1.0.0",
+  "description": "Sample using express and bcrypt to validate passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dschenkelman/bcrypt-sample.git"
+  },
+  "keywords": [
+    "bcrypt",
+    "sample"
+  ],
+  "author": "Damian Schenkelman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dschenkelman/bcrypt-sample/issues"
+  },
+  "homepage": "https://github.com/dschenkelman/bcrypt-sample#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4"
+  }
+}
