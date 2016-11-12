@@ -1,7 +1,7 @@
 {
   "name": "bcrypt-sample",
   "version": "1.0.0",
-  "description": "Sample using express and bcrypt to validate passwords",
+  "description": "Ejemplo usando express y bcrypt para validar passwords",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

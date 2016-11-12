@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 var store = {
-  // password hash is for 'secret'
+  // el hash este es para la password 'secret'
   'user1': '$2a$10$HjfPWNSmtwiXNpych1H8TO0tnf1HpsYrXAm8r85R.o/83pBEzxmh2'
 };
 
@@ -22,7 +22,7 @@ app.post('/authorize', bodyParser.json(), function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Username/password provider running...');
+  console.log('Proveedor de identidad corriendo...');
 });
 
 process.on('SIGTERM', () => {

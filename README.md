@@ -1,31 +1,33 @@
 
 
-# Running the sample
+# Ejecutar el ejemplo
 ```
 npm run
 ```
 
-## Performing a request
+## Realizar un pedido HTTP
 ```
 curl -XPOST -H "Content-Type: application/json" -d "`cat content.json`" http://localhost:3000/authorize
 ```
 
-## Benchmarking
+## Medición de performance
 ```
 ab -k -n 100 -c 10 -p content.json -T application/json http://localhost:3000/authorize
 ```
 
 ## Flamegraphs
-Based on [this gist](https://gist.github.com/dschenkelman/f6c323e904623ea9b8ea6b8f75e243ee) run the following to start the server processs:
+Los contenidos del programa a ejecutar están basados en los obtenidos de [este gist](https://gist.github.com/dschenkelman/f6c323e904623ea9b8ea6b8f75e243ee). 
+
+Ejecutar el siguiente programa para iniciar el proceso del servidor.
 ```bash
 ./measure-perf
 ```
 
-After that, terminate it and run:
+Realizar los pedidos HTTP y después finalizar la ejecución. Posteriormente, ejecutar lo siguiente:
 ```bash
 ./curate-perf
 ```
 
-A file named node-flame.svg will be available in the directoty. Open it with a web browser.
+Un archivo llamado `node-flame.svg` va a estar disponible en el directorio. Abrirlo con cualquier navegador de Internet.
 
-You can find an example [here](./node-flame-sample.svg).
+Se puede ver un ejemplo [aca](./node-flame-sample.svg)
