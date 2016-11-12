@@ -16,6 +16,8 @@ Abrir una terminal y ejecutar:
 npm run benchmark
 ```
 
+> En Linux se necesita tener instalada la herramienta `perf` que esta en el paquete [linux-tools](http://apt.ubuntu.com/p/linux-tools).
+
 En otra terminal, ejecutar el siguiente programa para enviar multiples pedidos HTTP a la aplicación:
 ```
 ab -k -n 100 -c 10 -p content.json -T application/json http://localhost:3000/authorize
