@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "node .",
+    "benchmark": "0x node ."
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "bcrypt": "^0.8.7",
     "body-parser": "^1.15.1",
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "0x": "^2.2.14"
   }
 }

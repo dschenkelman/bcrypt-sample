@@ -10,24 +10,17 @@ npm run
 curl -XPOST -H "Content-Type: application/json" -d "`cat content.json`" http://localhost:3000/authorize
 ```
 
-## Medición de performance
+## Flamegraphs
+Abrir una terminal y ejecutar:
+```
+npm run benchmark
+```
+
+En otra terminal, ejecutar el siguiente programa para enviar multiples pedidos HTTP a la aplicación:
 ```
 ab -k -n 100 -c 10 -p content.json -T application/json http://localhost:3000/authorize
 ```
 
-## Flamegraphs
-Los contenidos del programa a ejecutar están basados en los obtenidos de [este gist](https://gist.github.com/dschenkelman/f6c323e904623ea9b8ea6b8f75e243ee). 
+Cuando el programa `ab` finalice, volver a la terminal inicial y finalizar la ejecución del servidor. Para eso, apretar: `CONTROL + C`.
 
-Ejecutar el siguiente programa para iniciar el proceso del servidor.
-```bash
-./measure-perf
-```
-
-Realizar los pedidos HTTP y después finalizar la ejecución. Posteriormente, ejecutar lo siguiente:
-```bash
-./curate-perf
-```
-
-Un archivo llamado `node-flame.svg` va a estar disponible en el directorio. Abrirlo con cualquier navegador de Internet.
-
-Se puede ver un ejemplo [aca](./node-flame-sample.svg)
+Se va a crear una carpeta con nombre "profile-{numero}". Adentro de ella habrá un archivo llamado `flamegraph.html`. Abrirlo con cualquier navegador de Internet.
